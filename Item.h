@@ -14,7 +14,9 @@ class Item{
 
 };
 
-
+//static Kill(Item I){
+//  delete->this;
+//}
 
 
 

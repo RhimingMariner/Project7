@@ -9,7 +9,7 @@
 
 using namespace std;
 
-Class Animal : public Item{
+class Animal : public Item{
   
   priority_queue<Item*, vector<Item*>, compareItem>* q;
   public:

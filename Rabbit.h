@@ -15,8 +15,8 @@ class Rabbit : public Item{
   public:
     Rabbit();
     Rabbit(int k, priority_queue<Item*, vector<Item*>, compareItem >* q1) : item(k), q(q1){}
-    void Run(){}
-    ~Rabbit(){}
+    void Run(){};
+    ~Rabbit(){};
     //void Run(){
     //do something 
     }

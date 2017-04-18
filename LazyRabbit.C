@@ -1,7 +1,9 @@
-
-#include "Item.h"
 #ifndef
 #define
+#include "Item.h"
+#include <iostream>
+#include <stdlib.h>
+
 using namespace std;
 
 Class LazyRabbit : public Item{

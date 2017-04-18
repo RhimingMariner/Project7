@@ -1,3 +1,4 @@
+/*
 #include "Item.h"
 #include "Animal.h"
 #include "Rabbit.h"
@@ -18,3 +19,4 @@ class LazyRabbit : public Item{
 };
   
  
+*/

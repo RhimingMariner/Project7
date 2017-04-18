@@ -1,5 +1,5 @@
 //ar
-
+/*
 #ifndef ACTIVERABBIT_H
 #define ACTIVERABBIT_H
 #include "Rabbit.h"
@@ -21,3 +21,4 @@ class ActiveRabbit : public Item{
 
 };
 #endif
+*/

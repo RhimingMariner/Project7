@@ -6,9 +6,10 @@
 #include <queue>
 using namespace std;
 
-Class LazyRabbit : public Item{
+class LazyRabbit : public Item{
   priority_queue<Item*, vector<Item*>, compareItem>* q;
   public:
+    LazyRabbit();
     LazyRabbit(int k, priority_queue<Item*, vector<Item*>, compareItem >* q1) : item(k), q(q1){}
     void Run(){cout << "LazyRabbit at " << getKey() << endl;
                 setKey(getKey()+1;

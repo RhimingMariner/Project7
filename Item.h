@@ -8,13 +8,15 @@
 #include <vector>
 using namespace std;
 class Item{
-  int current;
-  int key;
+
   public:
-  Item() : key(0) {}
+    int current;
+    int key;
+    //Item() : key(0) {}
     Item(int k) : key(k){}
     int getKey() {return key;}
-    void setKey(int k){key = k;}
+    void setKey(int x){key = x;}
+    friend class compareItem;
     friend class Grasslands;
     friend class Animal;
     friend class LazyRabbit;

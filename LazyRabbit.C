@@ -1,5 +1,5 @@
-#ifndef
-#define
+#ifndef LAZYRABBIT_H
+#define LAZYRABBIT_H
 #include "Item.h"
 #include <iostream>
 #include <stdlib.h>

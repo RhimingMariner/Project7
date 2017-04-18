@@ -8,7 +8,7 @@
 
 using namespace std;
 
-Class Animal : public Item{
+class Animal : public Item{
   priority_queue<Item*, vector<Item*>, compareItem>* q;
   public:
     Animal(int k, priority_queue<Item*, vector<Item*>, compareItem >* q1) : item(k), q(q1){}

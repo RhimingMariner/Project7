@@ -15,7 +15,7 @@ class Animal : public Item{
     void Run(){cout << "Animal at " << getkey() << endl;
                 setKey(getKey()+2);
                 q->push(this);}
-    ~Animal(){}
+    ~Animal(){};
 };
   
   

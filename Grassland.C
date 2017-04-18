@@ -17,7 +17,7 @@ Search methods
 #include <queue>
 using namespace std;
 
-Class Grassland : public Item{
+class Grassland : public Item{
   priority_queue<Item*, vector<Item*>, compareItem>* q;
   public:
     Grassland(int k, priority_queue<Item*, vector<Item*>, compareItem >* q1) : item(k), q(q1){}

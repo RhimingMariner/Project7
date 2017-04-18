@@ -7,11 +7,9 @@ Search methods
 //need to create a bool hasGrass(int x, int y) return bool
 
 
-#include "Item.h"
-//#include "Animal.h"
+*/
 
-#ifndef
-#define
+
 #include "Item.h"
 #include <iostream>
 #include <list>
@@ -30,14 +28,7 @@ Class Grassland : public Item{
 };
   
   
-  
-  
-  
-  
-  
-  
-#endif
-
+/*
 bool SearchforRabbit(int x, int y){
 //we could also make it such that the area is larger than 512 by 512. We could make it 576 by 576
 //(added 66, 33 on each side for the wolf roam) and just put those in as no grass no animal constant cells.

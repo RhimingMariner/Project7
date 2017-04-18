@@ -8,7 +8,7 @@
 #include<stdlib.h>
 #include <queue>
 
-include namespace std;
+using namespace std;
 
 class Grassland : public Item{
   priority_queue<Item*, vector<Item*>, compareItem>* q;

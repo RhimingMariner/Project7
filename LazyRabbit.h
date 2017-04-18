@@ -2,7 +2,26 @@
 //extern priority_queue<Item*, vector<Item*>, compareItem> pq;
 //extern Grass grassGrid[512][512] gg;
 
+#ifndef "LAZYRABBIT_H"
+#define "LAZYRABBIT_H"
+#include "Rabbit.h"
+#include "Grassland.h"
+#include <iostream>
+#include <queue>
+#include <stdlib.h>
 
+using namespace std;
+
+class LazyRabbit : public Item{
+    priority_queue<Item*, vector<Item*>, compareItem >* q;
+  
+  public:
+    LazyRabbit();
+    LazyRabbit(int k, priority_queue<Item*, vector<Item*>, compareItem >* q1) : Item (k), q(q1){}
+    void Run(){};
+    ~LazyRabbit(){};
+};
+  
 /*
 void LazyRabbit::run(){
   //do stuff (check if it died)

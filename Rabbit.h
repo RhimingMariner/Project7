@@ -13,6 +13,7 @@ using namespace std;
 class Rabbit : public Item{
   priority_queue<Item*, vector<Item*>, compareItem>* q;
   public:
+    Rabbit();
     Rabbit(int k, priority_queue<Item*, vector<Item*>, compareItem >* q1) : item(k), q(q1){}
     void Run(){}
     ~Rabbit(){}

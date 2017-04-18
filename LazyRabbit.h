@@ -1,7 +1,7 @@
 //ar
 //extern priority_queue<Item*, vector<Item*>, compareItem> pq;
 //extern Grass grassGrid[512][512] gg;
-
+/*
 #ifndef "LAZYRABBIT_H"
 #define "LAZYRABBIT_H"
 #include "Rabbit.h"
@@ -21,7 +21,7 @@ class LazyRabbit : public Item{
     void Run(){};
     ~LazyRabbit(){};
 };
-  
+  */
 /*
 void LazyRabbit::run(){
   //do stuff (check if it died)

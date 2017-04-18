@@ -10,10 +10,13 @@ Search methods
 #include "Item.h"
 //#include "Animal.h"
 
-
-#include "Item.h"
 #ifndef
 #define
+#include "Item.h"
+#include <iostream>
+#include <list>
+#include <stdlib.h>
+
 using namespace std;
 
 Class Grassland : public Item{

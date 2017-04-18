@@ -11,6 +11,29 @@ Search methods
 //#include "Animal.h"
 
 
+#include "Item.h"
+#ifndef
+#define
+using namespace std;
+
+Class Grassland : public Item{
+  priority_queue<Item*, vector<Item*>, compareItem>* q;
+  public:
+    Grassland(int k, priority_queue<Item*, vector<Item*>, compareItem >* q1) : item(k), q(q1){}
+    void Run(){ cout << "Grassland at " << getKey() << endl;
+                setKey(getKey()+10);
+                q->push(this);}
+    ~Grassland(){}
+};
+  
+  
+  
+  
+  
+  
+  
+  
+#endif
 
 bool SearchforRabbit(int x, int y){
 //we could also make it such that the area is larger than 512 by 512. We could make it 576 by 576

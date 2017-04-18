@@ -4,6 +4,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <list>
+#include <queue>
 
 using namespace std;
 

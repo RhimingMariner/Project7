@@ -1,9 +1,9 @@
-#ifndef LAZYRABBIT_H
-#define LAZYRABBIT_H
 #include "Item.h"
+#include "Animal.h"
+#include "Rabbit.h"
 #include <iostream>
 #include <stdlib.h>
-
+#include <queue>
 using namespace std;
 
 Class LazyRabbit : public Item{
@@ -16,11 +16,4 @@ Class LazyRabbit : public Item{
     ~LazyRabbit(){}
 };
   
-  
-  
-  
-  
-  
-  
-  
-#endif
+ 

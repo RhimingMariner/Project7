@@ -26,6 +26,12 @@ class Item{
 //  delete->this;
 //}
 
-
+struct compareItem
+: binary_function<Item*, Item*, bool>
+{
+  bool operator()(const Item* t1, const Item* t2) const
+  {
+    return (t1->key > t2->key);
+  }
 
 */

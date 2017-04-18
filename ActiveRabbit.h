@@ -11,7 +11,7 @@
 
 using namespace std;
 
-Class ActiveRabbit : public Item{
+class ActiveRabbit : public Item{
   priority_queue<Item*, vector<item*>, compareItem>* q;
   public:
     ActiveRabbit(int k, priority_queue<Item*, vector<Item*>, compareItem >* q1) : item(k), q(q1){}

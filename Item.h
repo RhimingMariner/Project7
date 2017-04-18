@@ -1,6 +1,12 @@
 //ar
 
 /*
+#ifndef ITEM_H_
+#define ITEM_H_
+#include <iostream>
+#include <queue>
+#include <vector>
+using namespace std;
 class Item{
   int current;
   int key;

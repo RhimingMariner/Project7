@@ -1,12 +1,19 @@
 //sd
 #ifndef
 #define
+#include "Item.h"
+#include <iostream>
+#include <list>
+#include <stdlib.h>
+using namespace std;
 
 
 class Rabbit : public Item{
-  //create something here?
+  priority_queue<Item*, vector<Item*>, compareItem>* q;
   public:
-    
+    Rabbit(int k, priority_queue<Item*, vector<Item*>, compareItem >* q1) : item(k), q(q1){}
+    void Run(){}
+    ~Rabbit(){}
     //void Run(){
     //do something 
     }
@@ -17,6 +24,33 @@ class Rabbit : public Item{
 
 #endif
 /*
+
+//ar
+
+
+
+#include "Item.h"
+#ifndef
+#define
+include namespace std;
+
+Class Grassland : public Item{
+  priority_queue<Item*, vector<Item*>, compareItem>* q;
+  public:
+    Grassland(int k, priority_queue<Item*, vector<Item*>, compareItem >* q1) : item(k), q(q1){}
+    void Run(){}
+    ~Grassland(){}
+};
+  
+  
+  
+  
+  
+  
+  
+  
+#endif
+
 
 Course.h
 #indef COURSE_H_

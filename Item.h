@@ -16,8 +16,6 @@ class Item{
     friend class compareItem;
     friend class Grasslands;
     friend class Animal;
-    friend class LazyRabbit;
-    friend class ActiveRabbit;
     friend class Wolf;
     friend class Rabbit;
     virtual void Run() {}
@@ -34,4 +32,5 @@ struct compareItem
 };
 
 #endif
+
 

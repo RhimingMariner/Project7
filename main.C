@@ -12,6 +12,8 @@
 using namespace std;
 //we can also put grassland here if you want
 
+//Grassland field [512][512];
+
 int main(int argc, char* argv[])
 {
   if(argc <= 2 || argc >=4)
@@ -26,7 +28,9 @@ int main(int argc, char* argv[])
       Item* temp;
        for(int i = 0; i< rabbit; i++)
       {
-        temp = new Rabbit(0, 0, 0, &q);//make
+         //int xCoord = rand() % 512;//mod 512 x
+         //int yCoord = rand() % 512;//mod 512 y
+        temp = new Rabbit(xCoord, yCoord, 0, &q);//make
         temp -> key = 0;
         q.push(temp);
       }

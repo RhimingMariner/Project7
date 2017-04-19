@@ -1,31 +1,43 @@
-//sd
 #ifndef RABBIT_H
 #define RABBIT_H
 #include "Animal.h"
-#include "Grassland.h"
-#include <iostream>
-#include <list>
 #include <stdlib.h>
-#include <queue>
+
+
 using namespace std;
 
-
-class Rabbit : public Item{
-  priority_queue<Item*, vector<Item*>, compareItem>* q;
+//extern Grassland field [512][512];
+class Rabbit : public Animal{
+  
   public:
-    Rabbit();
-    Rabbit(int k, priority_queue<Item*, vector<Item*>, compareItem >* q1) : item(k), q(q1){}
-    void Run(){};
-    ~Rabbit(){};
-    //void Run(){
-    //do something 
+  
+    int bday;
+    Rabbit(int DOB, int x, int y, priority_queue<Item*, vector<Item*>, compareItem >* q): Animal(DOB, q){
+        bday = DOB;
+ 
+    this->x = x;
+    this->y = y;
     }
+    void Run(){
+    if (getKey()<100)
+    {
+        key+= 2;
+        //cout<<"Rabbit"<<endl;
+        q->push(this);
+        cout<<"Rabbit created"<<getKey()<<endl;
+    }
+    }
+    ~Rabbit(){}
+   
+    };
   
   
-    //~Rabbit(){}
-};
+  
+    
 
 #endif
+
+
 /*
 
 

@@ -21,10 +21,17 @@ class Wolf : public Animal{
     void Run(){
     if (getKey()<100)
     {
+        if(getKey()==bday)
+      {
+        cout <<"Wolf was born on Day" <<getKey() << endl;
+        key+=4;
+        q->push(this);
+      }
         key+= 4;
         //cout<<"Wolf"<<endl;
         q->push(this);
-        cout<<"Wolf created"<<getKey()<<endl;
+        cout<<"Wolf eats "<<getKey()<<endl;
+        cout<<"Wolf Coordinate x = "<<x<< "and Y =" << this->y <<endl;
     }
     }
     ~Wolf(){}
@@ -36,4 +43,3 @@ class Wolf : public Animal{
     
 
 #endif
-

@@ -7,12 +7,13 @@
 using namespace std;
 
 //extern Grassland field [512][512];
-class Rabbit : public Animal{
+
+class ActiveRabbit : public Animal{
   
   public:
   
     int bday;
-    Rabbit(int DOB, int x, int y, priority_queue<Item*, vector<Item*>, compareItem >* q): Animal(DOB, q){
+    ActiveRabbit(int DOB, int x, int y, priority_queue<Item*, vector<Item*>, compareItem >* q): Animal(DOB, q){
         bday = DOB;
  
     this->x = x;
@@ -21,15 +22,55 @@ class Rabbit : public Animal{
     void Run(){
     if (getKey()<100)
     {
+      if(getKey()==bday)
+      {
+        cout <<"Active Rabbit was born on Day " <<getKey() << endl;
+        key+=2;
+        q->push(this);
+      }
+      else{
         key+= 2;
         //cout<<"Rabbit"<<endl;
         q->push(this);
-        cout<<"Rabbit created"<<getKey()<<endl;
+        cout<<"Active Rabbit eats at Day "<<getKey()<<endl;
+        cout<<"Active Rabbit Coordinate x = "<<x<< " and Y = " << this->y <<endl;
+      }
     }
     }
-    ~Rabbit(){}
+    ~ActiveRabbit(){}
    
     };
+class LazyRabbit : public Animal{
+  
+  public:
+  
+    int bday;
+    LazyRabbit(int DOB, int x, int y, priority_queue<Item*, vector<Item*>, compareItem >* q): Animal(DOB, q){
+        bday = DOB;
+ 
+    this->x = x;
+    this->y = y;
+    }
+    void Run(){
+    if (getKey()<100)
+    {
+      if(getKey()==bday)
+      {
+        cout <<"Lazy Rabbit was born on Day " <<getKey() << endl;
+        key+=1;
+        q->push(this);
+      }
+        key+= 1;
+        //cout<<"Rabbit"<<endl;
+        q->push(this);
+        cout<<"Lazy Rabbit eats "<<getKey()<<endl;
+        cout<<"Lazy Rabbit Coordinates X = "<<x<< " and Y = "<< this->y <<endl;
+    }
+    }
+    ~LazyRabbit(){}
+   
+    };
+  
   
   
   
@@ -38,7 +79,49 @@ class Rabbit : public Animal{
 #endif
 
 
+
+
+
+
+
+
+
+
+
+
+
 /*
+#ifndef RABBIT_H
+#define RABBIT_H
+
+#include "Animal.h"
+#include "Grassland.h"
+#include <iostream>
+#include <list>
+#include <stdlib.h>
+#include <queue>
+using namespace std;
+
+
+class Rabbit:public Animal{
+  priority_queue<Item*, vector<Item*>, compareItem>* q;
+  public:
+    //put begin comment here
+    Rabbit();
+    Rabbit(int k, priority_queue<Item*, vector<Item*>, compareItem >* q1) : item(k), q(q1){}
+    void Run(){};
+    ~Rabbit(){};
+    //void Run(){
+    //do something 
+    }
+  
+  
+    //~Rabbit(){}
+    //put end comment here
+};
+
+
+//put begin comment here
 
 
 //LazyRabbit.h
@@ -55,18 +138,20 @@ class Rabbit : public Animal{
 #include <stdlib.h>
 
 using namespace std;
-
-class LazyRabbit : public Item{
+//put end comment here
+class LazyRabbit:public Rabbit{
     priority_queue<Item*, vector<Item*>, compareItem >* q;
   
   public:
+    //put begin comment here
     LazyRabbit();
     LazyRabbit(int k, priority_queue<Item*, vector<Item*>, compareItem >* q1) : Item (k), q(q1){}
     void Run(){};
     ~LazyRabbit(){};
+    //put end comment here
 };
   
-/*
+//put begin comment here
 void LazyRabbit::run(){
   //do stuff (check if it died)
   //3 checks, isAlive(), Starvation(), 
@@ -102,20 +187,21 @@ void LazyRabbit::run(){
 #include <stdlib.h>
 
 using namespace std;
-
-class ActiveRabbit : public Item{
-  priority_queue<Item*, vector<item*>, compareItem>* q;
+//put end comment here
+class ActiveRabbit:public Rabbit{
+  priority_queue<Item*, vector<Item*>, compareItem>* q;
   public:
+    //put begin comment here
     ActiveRabbit();
     ActiveRabbit(int k, priority_queue<Item*, vector<Item*>, compareItem >* q1) : item(k), q(q1){}
     void Run(){}
-    ~ActiveRabbit(){}
+    ~ActiveRabbit(){}//put end comment here
 
 };
 #endif
 
 
-
+/*
 #include "Item.h"
 #ifndef
 #define

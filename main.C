@@ -3,7 +3,7 @@
 #include <vector> 
 #include <iostream>
 #include <cstdlib>
-#include "Item.h
+#include "Item.h"
 #include "Grassland.h"
 #include "Animal.h"
 #include "Wolf.h"
@@ -11,36 +11,42 @@
 //i am not sure if we need to include lazy and active
 using namespace std;
 //we can also put grassland here if you want
-int main()
-{
-     priority_queue<Item*, vector<Item*>, compareItem> q;
-        //srand(time(0);
-        //Item* item;
-        //where he pushed in # of lr, ar, w Type object(#, #, #, q);
-        //i think we should have it be Grassland grass(5, 5, 2, q)
-        //object.setKey(10000)
-        //q.push(&object)
-        while(!q.empty()) {
-                item = q.top();
-                //cout << item << endl;
-                cout << "Time: " << item -> getKey() << " : ";
-                item -> run();
-                q.pop();
-        }   
-        //give report of sim. stats
-        //object.report()
-      
-  //this part we might not need later
-  int runtime[10000]; //item.setkey(10000);
-        
-  for(int i = 0; i<=10001; i++)
-  {
-  	runtime[i]=i;
-  }
-  
-  std::priority_queue<int, std::vector<int>, std::greater<int> > q; 
-  for(int i = 0; i < 10001; i++) q.push(runtime[i]);
- 
-  print_queue(q); 
-}
 
+int main(int argc, char* argv[])
+{
+  if(argc <= 2 || argc >=4)
+  {
+    cout<<"error"<<endl;
+  }
+  else{
+    int wolf = atoi(argv[1]);
+    int rabbit = atoi(argv[2]);
+  priority_queue<Item*, vector<Item*>, compareItem> q;
+        
+      Item* temp;
+       for(int i = 0; i< rabbit; i++)
+      {
+        temp = new Rabbit(0, 0, 0, &q);//make
+        temp -> key = 0;
+        q.push(temp);
+      }
+
+      for(int j = 0; j< wolf; j++)
+      {
+        temp = new Wolf(0, 0, 0, &q);//make
+        temp -> key = 0;
+        q.push(temp);
+      }
+
+        
+        while(!q.empty()){
+          temp = q.top();
+          temp -> Run();
+          q.pop();
+        }
+      }
+        //give report of sim. stats
+        //object.report() this part we might not need later*/
+  
+
+}

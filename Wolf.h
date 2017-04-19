@@ -1,28 +1,39 @@
 #ifndef WOLF_H
 #define WOLF_H
 #include "Animal.h"
-#include "Grassland.h"
-#include <iostream>
-#include <list>
 #include <stdlib.h>
-#include <queue>
+
 
 using namespace std;
 
-
-class Wolf : public Item{
-  priority_queue<Item*, vector<Item*>, compareItem>* q;
+//extern Grassland field [512][512];
+class Wolf : public Animal{
+  
   public:
-    Wolf();
-    Wolf(int k, priority_queue<Item*, vector<Item*>, compareItem >* q1) : item(k), q(q1){}
-    void Run(){};
-    ~Wolf(){};
-    //void Run(){
-    //do something 
+    
+    int bday;
+    Wolf(int DOB, int x, int y, priority_queue<Item*, vector<Item*>, compareItem >* q): Animal(DOB, q){
+        bday = DOB;
+ 
+    this->x = x;
+    this->y = y;
     }
+    void Run(){
+    if (getKey()<100)
+    {
+        key+= 4;
+        //cout<<"Wolf"<<endl;
+        q->push(this);
+        cout<<"Wolf created"<<getKey()<<endl;
+    }
+    }
+    ~Wolf(){}
+    
+    };
   
   
-    //~Rabbit(){}
-};
+
+    
 
 #endif
+

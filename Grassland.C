@@ -1,4 +1,4 @@
-//ar
+
 
 /*
 Search methods
@@ -9,24 +9,37 @@ Search methods
 
 */
 
-
+//set here
+/*
 #include "Item.h"
 #include <iostream>
 #include <list>
 #include <stdlib.h>
+#include "Grassland.h"
+#include "Wolf.h"
+#include "Rabbit.h"
 #include <queue>
 using namespace std;
 
-class Grassland : public Item{
+class Grassland:public Item{
   priority_queue<Item*, vector<Item*>, compareItem>* q;
   public:
-    Grassland(int k, priority_queue<Item*, vector<Item*>, compareItem >* q1) : item(k), q(q1){}
+    Grassland(int lr, int ar, int w)
+    {
+      lr = 0;
+      ar = 0;
+      w = 0;
+    }
+
+    //Grassland(int k, priority_queue<Item*, vector<Item*>, compareItem >* q1) : item(k), q(q1){}
     void Run(){ cout << "Grassland at " << getKey() << endl;
                 setKey(getKey()+10);
                 q->push(this);}
     ~Grassland(){}
-};
-  
+
+}; 
+*/
+  //set uup
   
 /*
 bool SearchforRabbit(int x, int y){

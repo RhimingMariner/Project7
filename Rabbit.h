@@ -20,7 +20,7 @@ class ActiveRabbit : public Animal{
     this->y = y;
     }
     void Run(){
-    if (getKey()<100)
+    if (getKey()<20)
     {
       if(getKey()==bday)
       {
@@ -52,7 +52,7 @@ class LazyRabbit : public Animal{
     this->y = y;
     }
     void Run(){
-    if (getKey()<100)
+    if (getKey()<20)
     {
       if(getKey()==bday)
       {

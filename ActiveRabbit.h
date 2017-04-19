@@ -1,4 +1,4 @@
-//ar
+
 /*
 #ifndef ACTIVERABBIT_H
 #define ACTIVERABBIT_H

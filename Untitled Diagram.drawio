@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-14T17:42:10.858Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36 Edg/85.0.564.51" etag="13QCUXYC_hzopIXfFacN" version="13.8.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-14T18:02:54.178Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36 Edg/85.0.564.51" etag="U6L3feuSSda7Q0FFQyXk" version="13.8.0" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1209" dy="675" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -373,6 +373,12 @@
             <mxPoint x="730" y="2410" as="sourcePoint" />
             <mxPoint x="780" y="2360" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Tcygw-R1gbdxCRvLHlvC-90" value="Where do I put the Alphabetical search or the most recent search?" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="590" y="2580" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Tcygw-R1gbdxCRvLHlvC-91" value="Should I split up the login process?" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="740" y="2540" width="40" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

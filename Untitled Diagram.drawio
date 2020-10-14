@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-14T18:59:07.625Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36 Edg/85.0.564.51" etag="Se_crJKURFXCrkDBGhQN" version="13.8.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-14T19:00:13.179Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36 Edg/85.0.564.51" etag="SMINOlMuvTe4bONI8HhU" version="13.8.0" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1209" dy="675" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -356,9 +356,6 @@
         </mxCell>
         <mxCell id="Tcygw-R1gbdxCRvLHlvC-98" value="Is spaced out better or squinched together?" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="630" y="2820" width="40" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="Tcygw-R1gbdxCRvLHlvC-99" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="590" y="2680" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Tcygw-R1gbdxCRvLHlvC-100" value="On login, should I check every field on the submit or just group back up to the beginning?" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="970" y="2430" width="170" height="20" as="geometry" />
